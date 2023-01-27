@@ -1,0 +1,60 @@
+{
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "security": {
+        "recommended": true
+      },
+      "a11y": {
+        "recommended": true
+      },
+
+      "suspicious": {
+        "recommended": true,
+        "noDoubleEquals": "error",
+        "noArrayIndexKey": "error",
+        "noExplicitAny": "error"
+      },
+      "correctness": {
+        "recommended": true,
+        "noUndeclaredVariables": "warn",
+        "noUnusedVariables": "error",
+        "useValidForDirection": "error",
+        "noConstAssign": "error"
+      },
+      "style": {
+        "recommended": true,
+        "noImplicitBoolean": "off",
+        "noNegationElse": "warn",
+        "noShoutyConstants": "off",
+        "useSelfClosingElements": "error",
+        "useShorthandArrayType": "warn",
+        "useBlockStatements": "off"
+      },
+      "complexity": {
+        "recommended": true,
+        "noExtraBooleanCast": "off"
+      },
+      "nursery": {
+        "recommended": true,
+        "noBannedTypes": "error"
+      }
+    },
+    "ignore": ["./node_modules/"]
+  },
+  "formatter": {
+    "enabled": true,
+    "formatWithErrors": false,
+    "indentStyle": "tab",
+    "indentSize": 2,
+    "lineWidth": 80,
+    "ignore": ["./node_modules/"]
+  },
+  "javascript": {
+    "formatter": {
+      "quoteStyle": "single",
+      "trailingComma": "all"
+    }
+  }
+}
